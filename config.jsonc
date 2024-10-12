@@ -1,15 +1,11 @@
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
-        "type": "iterm",
-        "width": 10,
-        "color":{
-        	"2": "blue"
-        	}
+        "type": "none"
     },
     "display": {
         "separator": "   ",
-        "color": "yellow"
+        "color": "cyan"
     },
     "modules": [
         {
@@ -64,13 +60,13 @@
         {
             "type": "command",
             "key": "  OS Age ",
-            "keyColor": "red",
+            "keyColor": "blue",
             "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
         },
         {
             "type": "uptime",
             "key": "  Uptime ",
-            "keyColor": "red"
+            "keyColor": "blue"
         },
         {
             "type": "custom", // InformationEnd
